@@ -1,0 +1,48 @@
+body {
+    background-color: white;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+#landing-header {
+    text-align: center;
+    background-color: #d1d0cbff;
+}
+
+#landing-header img {
+    width: 60%;
+    max-height: 350px;
+    height: 50%;
+    background-color: #d1d0cbff;
+}
+
+#card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 30px;
+    justify-content: center;
+}
+
+.card {
+    background-color: #C8C8C8;
+    color: black;
+    padding: 30px;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 8px;
+    transition: background-color 0.9s ease;
+}
+
+.card a {
+    text-decoration: none; /* Ensure no underline on links inside cards */
+    color: inherit;
+}
+
+.card:hover {
+    background-color: #989898;
+}
