@@ -1,0 +1,69 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: auckland airport data enquiry
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: insights_auckland_airport_data
+  - action: action_ask_about_airport_data
+
+- story: icc cricket world cup 2023
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: general_insights_cricket_worldcup_2023
+  - action: action_general_insights_cricket_worldcup_2023
+
+- story: correlations in the data
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: find_correlations_in_the_data
+  - action: utter_ask_dataset
+  - intent: correlations_dataset_selection
+  - action: action_perform_correlations
+  - intent: difference_between_correlations_and_vif
+  - action: utter_tell_diff_bw_corr_and_vif
+
+- story: ask about anything
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: enquire_about_anything
+  - action: action_enquire_about_anything
+
+- story: give movie recommendations
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: give_me_movie_recommendations
+  - action: action_give_me_movie_recommendations

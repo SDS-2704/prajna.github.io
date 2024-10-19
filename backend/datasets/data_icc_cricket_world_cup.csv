@@ -1,0 +1,33 @@
+opponent,margin_label,margin,margin_sign,india_runs,india_wickets_lost,ground,match_date,scorecard,india_wins
+Sri Lanka,runs,67,positive,373,7,Guwahati,10-01-2023,ODI # 4501,1
+Sri Lanka,wickets,4,positive,219,6,Eden Gardens,12-01-2023,ODI # 4503,1
+Sri Lanka,runs,317,positive,390,5,Thiruvananthapuram,15-01-2023,ODI # 4505,1
+New Zealand,runs,12,positive,349,8,Hyderabad,18-01-2023,ODI # 4507,1
+New Zealand,wickets,8,positive,111,2,Raipur,21-01-2023,ODI # 4509,1
+New Zealand,runs,90,positive,385,9,Indore,24-01-2023,ODI # 4511,1
+Australia,wickets,5,positive,191,5,Wankhede,17-03-2023,ODI # 4538,1
+Australia,wickets,10,negative,117,10,Visakhapatnam,19-03-2023,ODI # 4541,0
+Australia,runs,21,negative,248,10,Chennai,22-03-2023,ODI # 4545,0
+India,wickets,5,positive,118,5,Bridgetown,27-07-2023,ODI # 4622,1
+India,wickets,6,negative,181,10,Bridgetown,29-07-2023,ODI # 4623,0
+India,runs,200,positive,351,5,Tarouba,01-08-2023,ODI # 4624,1
+Pakistan,,,,266,10,Pallekele,02-09-2023,ODI # 4630,0
+Nepal,wickets,10,positive,147,0,Pallekele,04-09-2023,ODI # 4632,1
+Pakistan,runs,228,positive,356,2,Colombo (RPS),10-09-2023,ODI # 4639,1
+India,runs,41,positive,213,10,Colombo (RPS),12-09-2023,ODI # 4641,1
+India,runs,6,negative,259,10,Colombo (RPS),15-09-2023,ODI # 4645,0
+India,wickets,10,positive,51,0,Colombo (RPS),17-09-2023,ODI # 4649,1
+Australia,wickets,5,positive,281,5,Mohali,22-09-2023,ODI # 4651,1
+Australia,runs,99,positive,399,5,Indore,24-09-2023,ODI # 4654,1
+Australia,runs,66,negative,286,10,Rajkot,27-09-2023,ODI # 4657,0
+Australia,wickets,6,positive,201,4,Chennai,08-10-2023,ODI # 4662,1
+Afghanistan,wickets,8,positive,273,2,Delhi,11-10-2023,ODI # 4666,1
+Pakistan,wickets,7,positive,192,3,Ahmedabad,14-10-2023,ODI # 4669,1
+Bangladesh,wickets,7,positive,261,3,Pune,19-10-2023,ODI # 4674,1
+New Zealand,wickets,4,positive,274,6,Dharamsala,22-10-2023,ODI # 4678,1
+England,runs,100,positive,229,9,Lucknow,29-10-2023,ODI # 4686,1
+Sri Lanka,runs,302,positive,357,8,Wankhede,02-11-2023,ODI # 4690,1
+South Africa,runs,243,positive,326,5,Eden Gardens,05-11-2023,ODI # 4694,1
+Netherlands,runs,160,positive,410,4,Bengaluru,12-11-2023,ODI # 4702,1
+New Zealand,runs,70,positive,397,4,Wankhede,15-11-2023,ODI # 4703,1
+Australia,wickets,6,negative,240,10,Ahmedabad,19-11-2023,ODI # 4705,0

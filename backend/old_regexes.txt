@@ -1,0 +1,3 @@
+- regex: dataset_name
+  examples: |
+    - '(?<=in\s)(\b\w+\b)(?=\dataset)'

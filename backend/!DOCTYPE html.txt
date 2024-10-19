@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Landing Page - Prajna</title>
+      <link rel="stylesheet" href="index_landing_css.css">
+      <style>
+         body {
+         background-color: white;
+         color: #333;
+         margin: 0;
+         padding: 0;
+         font-family: Arial, sans-serif;
+         }
+         #header-container {
+         background-color: black;
+         color: #fff;
+         padding: 15px;
+         text-align: right;
+         }
+         #navigation-buttons a {
+         color: #333;
+         text-decoration: none;
+         padding: 5px 10px;
+         border-radius: 2px;
+         background-color: #eee; /* Lighter grey */
+         transition: background-color 0.3s ease;
+         }
+         #navigation-buttons a:hover {
+         background-color: #ccc;
+         }
+         #navigation-buttons a:first-child {
+         margin-right: 10px; /* Adjust the margin as needed */
+         }
+         #main-header {
+            text-align: center;
+            padding: 20px;
+        }
+
+        #main-header h1 {
+            font-size: 36px;
+        }
+
+        #landing-header {
+            position: relative;
+            text-align: center;

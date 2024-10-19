@@ -1,0 +1,5 @@
+Question 01)
+Which month had the maximum International departures (excl. Transits in the last 10 years?
+
+Regex for feature
+- (?<=maximum\s)|(?<=largest\s)|(?<=greatest\s)|(?<=highest\s)|(?<=minimum\s)|(?<=lowest\s)|(?<=smallest\s).*

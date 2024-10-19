@@ -1,0 +1,169 @@
+rasa shelversion: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - wassup
+    - ssup
+    - namastey
+  
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremely sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- regex: feature
+  examples: |
+    - (maximum|max|largest|greatest|highest|minimum|lowest|smallest\s(.*?)\sin)
+
+- regex: find
+  examples: |
+    - (maximum|max|largest|greatest|highest|minimum|lowest|smallest|avg|average)
+
+- intent: insights_auckland_airport_data
+  examples: |
+    - In which [month](attribute) Auckland had the [maximum](find) [International arrivals (excl. Transits)](feature.group(2)) in the last 10 years?
+    - What was the maximum [Domestic aircraft movements](feature) seen in Auckland in the last 10 years and in which [month](attribute)?
+    - What was the [average](find) [Domestic arrivals](feature) in the last 10 years?
+
+- intent: general_insights_cricket_worldcup_2023
+  examples: |
+    - What was the [best](find_) performance from [India](country) in Cricket World Cup 2023?
+    - What was the [worst](find_) performance from [India](country) in Cricket World Cup 2023?
+    - Summarize the performance of [India](country) in Cricket World Cup 2023.
+    - Do you see any associations in the various attributes, while looking at the stats and records of the ICC Cricket World Cup 2023?
+    - If you were to pick your favourite game from the ICC Cricket World Cup 2023, which one would it be?
+
+- intent: predictive_insights_cricket_worldcup_2023
+  examples: |
+    - Who do you think has the highest probability of winning the ICC Cricket World Cup 2023?
+
+- intent: find_correlations_in_the_data
+  examples: |
+    - I want to find correlations / congruities in my data
+    - I want to find correlations in my data
+    - Give me a summary on correlations in my data
+    - I want to discover congruities in my data
+    - Can you please generate a plot on the ICC Cricket World Cup 2023 data?
+
+- regex: dataset_name
+  examples: |
+    - (?<=dataset - ).*
+
+- intent: correlations_dataset_selection
+  examples: |
+    - Please find correlations in the dataset - [john_wick_daisy_investigation](dataset_name)
+    - Please find correlations in the dataset - [icc_cricket_world_cup_2024](dataset_name)
+
+- intent: difference_between_correlations_and_vif
+  examples: |
+    - By the way, can you please tell me that, when should I see correlation analysis and when should I see VIF?
+
+- intent: find_anomalies_in_the_data
+  examples: |
+    - I want to find outliers in my data
+    - I want to find anomalies in my data
+
+- regex: entity_name
+  examples: |
+    - (?<=is )|(?<=about ).*
+
+- intent: enquire_about_anything
+  examples: |
+    - Tell me something about [Virat Kohli](entity_name)
+    - Who is [Virat Kohli](entity_name)
+    - Tell me something about [Polaris](entity_name)
+    - Tell me something about [Range Rover Evoque](entity_name)
+    - Give me some information about [Python Programming Language](entity_name)
+
+- regex: user
+  examples: |
+    - (?<=friend ).*
+
+- intent: give_me_movie_recommendations
+  examples: |
+    - Can you please recommend some movies for my friend [Sam](user)
+    - Can you please give some movie recommendations for my friend [Mark](user)
+    - Can you please recommend me some good movies?

@@ -1,0 +1,9 @@
+The strategic fit of W.T. is mainly about how well the use of a Conversational AI aligns with any organization's broader business objectives, goals, and overall strategy. This Conversational AI - W.T., which is built using RASA (an open-source Natural Language Processing & Understanding framework) can be strategically valuable to any data-heavy / data-centric company for a variety of reasons :-
+
+Faster and deeper extraction of insights : Conversationally extracting insights from a high volume of complex data is a consumer preference in today’s era of AI/ML proliferation at the centre of data-driven ecosystems.
+Personalized messaging : Consumers of today prefer a flavour of personalized messaging when it comes to any sort of web interaction, and is now even prevalent in data extractions and querying.
+Cost Reduction : There is a reasonable amount of cost reduction done by leveraging Conversational AI to automate routine customer interactions. 
+Insights on customer preferences and behaviour : Conversational AI platforms can gather valuable data from customer interactions , helping organizations gain insights into customer preferences, pain points, and trends. The data gained from this can inform product development, aid marketing strategies, and influence overall business decisions.
+
+
+What was the [best](find_) performance from [India](country) in Cricket World Cup 2023?

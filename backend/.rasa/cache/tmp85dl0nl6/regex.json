@@ -1,0 +1,22 @@
+[
+  {
+    "name": "dataset_name",
+    "pattern": "'(?<=in\\s)(\\b\\w+\\b)(?=\\dataset)'"
+  },
+  {
+    "name": "entity_name",
+    "pattern": "(?<=is )|(?<=about ).*"
+  },
+  {
+    "name": "feature",
+    "pattern": "(maximum|max|largest|greatest|highest|minimum|lowest|smallest\\s(.*?)\\sin)"
+  },
+  {
+    "name": "find",
+    "pattern": "(maximum|max|largest|greatest|highest|minimum|lowest|smallest|avg|average)"
+  },
+  {
+    "name": "user",
+    "pattern": "(?<=friend ).*"
+  }
+]

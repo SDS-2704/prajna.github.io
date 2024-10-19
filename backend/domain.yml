@@ -1,0 +1,111 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - insights_auckland_airport_data
+  - general_insights_cricket_worldcup_2023
+  - find_correlations_in_the_data
+  - enquire_about_anything
+  - give_me_movie_recommendations
+  - find_anomalies_in_the_data
+  - predictive_insights_cricket_worldcup_2023
+  - correlations_dataset_selection
+  - difference_between_correlations_and_vif
+
+entities:
+  - attribute
+  - feature
+  - find_
+  - country
+  - dataset
+  - user
+  - dataset_name
+  - entity_name
+
+slots:
+  attribute:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: attribute
+  feature:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: feature
+  find:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: find
+  dataset:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: dataset
+  user:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: user
+  dataset_name:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: dataset_name
+  entity_name:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: dataset_name
+
+responses:
+  utter_greet_0:
+  - text: "Hey Shivam! Today, I have unlocked a new skill. I was recently trained to recommend some good movies using collaborative filtering approaches. Now that I have access to your watch history and your friends' on OTT, would you want me to recommend you or your friends any good movie?"
+
+  utter_greet:
+  - text: "Hey Shivam! What can I do for you today?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://www.istockphoto.com/photo/the-african-king-gm492611032-76399417"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_chatgpt_response:
+  - text: "{chatgpt_response}"
+
+  utter_ask_dataset:
+  - text: "Which dataset would you like to perform correlations on? I have access to these two datasets right now - 'john_wick_daisy_investigation' &  'icc_cricket_world_cup_2024'"
+
+  utter_tell_diff_bw_corr_and_vif:
+  - text: "Correlation and Variance Inflation Factor (VIF) are both used to analyse and weigh relationships between variables in your target dataset, but they serve different purposes and provide different types of information. \nFor instance, Correlations measures the strength and direction of a linear relationship between two variables. Or, in other words, it helps in understanding how one variable changes with respect to another.\n\nOn the other hand, VIF measures the amount of multi-collinearity among the predictor variables in a regression model. By multi-collinearity; I mean that it quantifies how much the variance of a regression coefficient is inflated due to multi-collinearity. As a guiding principle; Data Scientists want to avoid multi-collinearity among independent variables as much as possible; since otherwise the results will have less reliable statistical inferences."
+
+actions:
+  - action_ask_about_airport_data
+  - action_general_insights_cricket_worldcup_2023
+  - action_correlations
+  - action_enquire_about_anything
+  - action_fallback
+  - action_give_me_movie_recommendations
+  - action_perform_correlations
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
