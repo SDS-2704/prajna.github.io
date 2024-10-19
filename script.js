@@ -20,7 +20,7 @@ function appendMessage(sender, message) {
 
 function fetchRasaResponse(userMessage) {
     // Use your Rasa server endpoint
-    var rasaEndpoint = "http://localhost:5005/webhooks/rest/webhook";
+    var rasaEndpoint = "ec2-18-144-156-116.us-west-1.compute.amazonaws.com";
 
     fetch(rasaEndpoint, {
         method: "POST",
