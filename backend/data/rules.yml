@@ -7,7 +7,7 @@ rules:
   - intent: goodbye
   - action: utter_goodbye
 
-- rule: Say 'I am a bot' anytime the user challenges
+- rule: Say 'You know right, I am a bot! Just be a bit logical, no :p' anytime the user challenges
   steps:
   - intent: bot_challenge
   - action: utter_iamabot

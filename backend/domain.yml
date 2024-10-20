@@ -17,6 +17,10 @@ intents:
   - predictive_insights_cricket_worldcup_2023
   - correlations_dataset_selection
   - difference_between_correlations_and_vif
+  - start_game
+  - guess_letter
+  - play_again
+  - quit_game
 
 entities:
   - attribute
@@ -27,6 +31,7 @@ entities:
   - user
   - dataset_name
   - entity_name
+  - letter
 
 slots:
   attribute:
@@ -63,7 +68,20 @@ slots:
     type: text
     mappings:
       - type: from_entity
-        entity: dataset_name
+        entity: entity_name
+  letter:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: letter
+  word:
+    type: unfeaturized
+  guessed_word:
+    type: unfeaturized
+  guessed_letters:
+    type: unfeaturized
+  lives:
+    type: unfeaturized
 
 responses:
   utter_greet_0:
@@ -86,7 +104,7 @@ responses:
   - text: "Bye"
 
   utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+  - text: "You know right, I am a bot! Just be a bit logical, no :p"
 
   utter_chatgpt_response:
   - text: "{chatgpt_response}"
