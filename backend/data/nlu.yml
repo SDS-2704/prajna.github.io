@@ -19,6 +19,41 @@ nlu:
     - wassup
     - ssup
     - namastey
+
+- intent: start_word_game
+  examples: | 
+    - Can we play a word game?
+    - I want to pass my time
+    - Let's play a game?
+    - Do you know a good game, we can play?
+
+- regex: letter
+  examples: |
+    - [a-zA-Z]   
+
+- intent: guess_letter
+  examples: |
+    - I guess [a](letter)
+    - Let me try [b](letter)
+    - The letter is [c](letter)
+    - I'll guess [d](letter)
+    - My guess is [e](letter)
+    - [f](letter)
+    - I think it’s [g](letter)
+
+- intent: play_again
+  examples: |
+    - I want to play again
+    - Let's do another round
+    - Play again
+    - Yes, one more time
+
+- intent: quit_game
+  examples: |
+    - I want to quit
+    - No, I don't want to play anymore
+    - Stop the game
+    
   
 
 - intent: goodbye
@@ -93,6 +128,7 @@ nlu:
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+    - love me?
 
 - regex: feature
   examples: |
