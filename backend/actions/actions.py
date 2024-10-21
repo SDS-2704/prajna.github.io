@@ -198,10 +198,10 @@ class ActionEnquireNews(Action):
         dispatcher.utter_message(text=f"Here is one of the articles related to Tesla : \n {desc_}")
         return []
 
-class ActionPlayAGame(Action):
-    def name(self) -> Text:
-        return "action_play_a_game"
-    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+# class ActionPlayAGame(Action):
+#     def name(self) -> Text:
+#         return "action_play_a_game"
+#     def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
 
 class ActionEnquireAboutAnything(Action):
