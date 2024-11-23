@@ -75,13 +75,24 @@ slots:
       - type: from_entity
         entity: letter
   word:
-    type: unfeaturized
+    type: text  # or any appropriate type (text, float, etc.)
+    mappings:
+      - type: from_text  # Assuming the slot is filled from user input
+
   guessed_word:
-    type: unfeaturized
+    type: text
+    mappings:
+      - type: from_text
+
   guessed_letters:
-    type: unfeaturized
+    type: text
+    mappings:
+      - type: from_text
+
   lives:
-    type: unfeaturized
+    type: float  # assuming lives is a numerical value
+    mappings:
+      - type: from_text
 
 responses:
   utter_greet_0:

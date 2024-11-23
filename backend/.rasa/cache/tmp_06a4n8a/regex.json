@@ -1,0 +1,26 @@
+[
+  {
+    "name": "dataset_name",
+    "pattern": "(?<=dataset - ).*"
+  },
+  {
+    "name": "entity_name",
+    "pattern": "(?<=is )|(?<=about ).*"
+  },
+  {
+    "name": "feature",
+    "pattern": "(maximum|max|largest|greatest|highest|minimum|lowest|smallest\\s(.*?)\\sin)"
+  },
+  {
+    "name": "find",
+    "pattern": "(maximum|max|largest|greatest|highest|minimum|lowest|smallest|avg|average)"
+  },
+  {
+    "name": "letter",
+    "pattern": "[a-zA-Z]"
+  },
+  {
+    "name": "user",
+    "pattern": "(?<=friend ).*"
+  }
+]
