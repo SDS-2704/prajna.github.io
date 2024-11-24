@@ -74,14 +74,6 @@ slots:
     mappings:
       - type: from_entity
         entity: letter
-  word:
-    type: unfeaturized
-  guessed_word:
-    type: unfeaturized
-  guessed_letters:
-    type: unfeaturized
-  lives:
-    type: unfeaturized
 
 responses:
   utter_greet_0:

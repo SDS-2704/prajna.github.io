@@ -198,11 +198,10 @@ class ActionEnquireNews(Action):
         dispatcher.utter_message(text=f"Here is one of the articles related to Tesla : \n {desc_}")
         return []
 
-class ActionPlayAGame(Action):
-    def name(self) -> Text:
-        return "action_play_a_game"
-    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-
+# class ActionPlayAGame(Action):
+#     def name(self) -> Text:
+#         return "action_play_a_game"
+#     def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
 class ActionEnquireAboutAnything(Action):
     import wikipediaapi
@@ -283,7 +282,7 @@ class ActionRecommendations(Action):
         for movie in recommended_movies:
             raw_movie_id = inner_to_raw_items.get(movie.iid, "Unknown Movie")
 
-            with open(r"C:\Users\Shivam Dutt Sharma\Desktop\Prajna\ConversationalAIPrajna\WT\datasets\movies.csv", encoding="utf8") as f:
+            with open(r"C:\Users\Shivam Dutt Sharma\Desktop\Prajna_Github\prajna.github.io\backend\datasets\movies.csv", encoding="utf8") as f:
                 reader = csv.DictReader(f)
                 for row in reader:
                     if (row['movieId'] == raw_movie_id):
