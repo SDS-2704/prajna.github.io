@@ -20,7 +20,7 @@ function appendMessage(sender, message) {
 
 function fetchRasaResponse(userMessage) {
     // Use your Rasa server endpoint
-    var rasaEndpoint = "wss://ec2-54-215-250-133.us-west-1.compute.amazonaws.com:5005/socket";
+    var rasaEndpoint = "ws://ec2-54-215-250-133.us-west-1.compute.amazonaws.com:5005/socket";
 
     fetch(rasaEndpoint, {
         method: "POST",
