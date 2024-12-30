@@ -1,3 +1,14 @@
+@media (max-width: 768 px) {
+    /* Styles for tablets and smaller screens */
+    body {
+        font-size: 14px;
+    }
+}
+
+
+        
+    
+
 body {
     background-color: white;
     color: black;
